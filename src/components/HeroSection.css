@@ -1,0 +1,49 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 400px; /* Increased height for a more prominent hero section */
+  background-image: url("../assets/high_def_image.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Gradient Overlay for Better Readability */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  ); /* Gradient overlay for better text contrast */
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px; /* Limit the width of the content */
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Larger font size for the title */
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Make the title stand out */
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Larger font size for the tagline */
+  margin: 0;
+  line-height: 1.5;
+}

@@ -1,0 +1,53 @@
+.company-history {
+    padding: 50px;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .company-history h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .company-history p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    width: 80%;
+  }
+  
+  .timeline-year {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    min-width: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .timeline-content {
+    background: white;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+  

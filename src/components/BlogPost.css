@@ -1,0 +1,51 @@
+.blog-post {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Dark Mode */
+  .dark-mode .blog-post {
+    background: #222;
+    color: white;
+  }
+  
+  .dark-mode .back-btn {
+    background: #ff9800;
+  }
+  
+  .dark-mode .back-btn:hover {
+    background: #e67e00;
+  }
+  

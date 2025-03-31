@@ -1,0 +1,89 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1a1a2e;
+  color: white;
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Login/Signup Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn, .signup-btn {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.login-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup-btn {
+  background: #ff4757;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hamburger Menu (Mobile) */
+.menu-icon {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1a1a2e;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+}

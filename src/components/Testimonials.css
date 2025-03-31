@@ -1,0 +1,71 @@
+/* Container for Testimonials */
+.testimonials-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.testimonials-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Horizontal Carousel */
+.testimonials-carousel {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap to each card */
+  gap: 1rem; /* Add spacing between cards */
+  padding: 1rem;
+}
+
+.testimonials-carousel::-webkit-scrollbar {
+  height: 8px; /* Adjust scrollbar height */
+}
+
+.testimonials-carousel::-webkit-scrollbar-thumb {
+  background: #ccc; /* Scrollbar color */
+  border-radius: 4px;
+}
+
+.testimonials-carousel::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Scrollbar track color */
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  flex: 0 0 300px; /* Set a fixed width for each card */
+  scroll-snap-align: center; /* Snap to the center of the card */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.testimonial-card img.customer-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.testimonial-card .testimonial-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .customer-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 90%;
+  }
+}

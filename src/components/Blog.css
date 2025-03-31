@@ -1,0 +1,97 @@
+/* Blog Page */
+.blog-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Blog List */
+.blog-list {
+  display: flex;
+  gap: 2rem; /* Add spacing between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 1rem;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.blog-list::-webkit-scrollbar {
+  height: 8px; /* Adjust scrollbar height */
+}
+
+.blog-list::-webkit-scrollbar-thumb {
+  background: #ccc; /* Scrollbar color */
+  border-radius: 4px;
+}
+
+.blog-list::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Scrollbar track color */
+}
+
+/* Blog Card */
+.blog-card {
+  flex: 0 0 300px; /* Set a fixed width for each card */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: left;
+  height: 400px; /* Set a fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is evenly spaced */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure images fit within the container */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-align: left;
+}
+
+.blog-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+  text-align: left;
+  flex-grow: 1; /* Ensure the description takes up available space */
+}
+
+.blog-card .read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-start; /* Align the "Read More" link to the left */
+}
+
+.blog-card .read-more:hover {
+  text-decoration: underline;
+}
+
+/* Hover Effect */
+.blog-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode */
+.dark-mode .blog-card {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .read-more {
+  color: #ff9800;
+}

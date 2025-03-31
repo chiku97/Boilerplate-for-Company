@@ -1,0 +1,68 @@
+/* Team Section */
+.team-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Team Carousel */
+.team-carousel {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 1rem; /* Add spacing between cards */
+  padding: 1rem;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.team-carousel::-webkit-scrollbar {
+  height: 8px; /* Adjust scrollbar height */
+}
+
+.team-carousel::-webkit-scrollbar-thumb {
+  background: #ccc; /* Scrollbar color */
+  border-radius: 4px;
+}
+
+.team-carousel::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Scrollbar track color */
+}
+
+/* Team Card */
+.team-card {
+  flex: 0 0 300px; /* Set a fixed width for each card */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-card .role {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.team-card .bio {
+  font-size: 0.9rem;
+  color: #777;
+}

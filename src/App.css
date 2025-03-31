@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: white;
+}

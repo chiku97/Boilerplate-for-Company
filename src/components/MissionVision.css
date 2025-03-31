@@ -1,0 +1,40 @@
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: #f4f4f4;
+  }
+  
+  .mission, .vision {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .mission h2, .vision h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .mission p, .vision p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+    }
+  
+    .mission, .vision {
+      width: 100%;
+    }
+  }
+  

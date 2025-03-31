@@ -1,0 +1,76 @@
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container p {
+    font-size: 1.2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 120px;
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  /* Success Message */
+  .success-msg {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Dark Mode */
+  .dark-mode .contact-container {
+    background: #222;
+    color: white;
+  }
+  
+  .dark-mode input,
+  .dark-mode textarea {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode button {
+    background: #ff9800;
+  }
+  
+  .dark-mode button:hover {
+    background: #e67e00;
+  }
+  

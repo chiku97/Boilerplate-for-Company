@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem;
+}
+
+.dark-mode section {
+  background-color: #1e1e1e;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.dark-mode p {
+  color: #ccc;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  color: #555;
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
