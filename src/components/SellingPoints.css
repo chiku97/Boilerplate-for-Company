@@ -1,80 +1,48 @@
 /* Container for Selling Points */
 .selling-points-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem; /* Add spacing between selling points */
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Individual Selling Point */
-.selling-point {
-  display: flex;
-  flex-wrap: wrap; /* Ensure responsiveness */
-  align-items: center;
-  gap: 1.5rem; /* Add spacing between text and image */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-}
-
-.dark-mode .selling-point {
-  background-color: #1e1e1e;
-  border-color: #333;
-  color: #ffffff;
-}
-
-/* Text Section */
-.text-section {
-  flex: 1;
-}
-
-.text-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.text-section p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.dark-mode .text-section p {
-  color: #ccc;
-}
-
-/* Image Section */
-.image-section {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-section img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 200px; /* Limit the height of the image */
-  border-radius: 8px;
-  object-fit: cover; /* Ensure the image fits nicely within its container */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .selling-point {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    gap: 2rem; /* Add spacing between selling points */
+    padding: 2rem;
   }
-
-  .text-section,
-  .image-section {
-    width: 100%;
+  
+  /* Individual Selling Point */
+  .selling-point {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Add spacing between image and text */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-
+  
+  /* Reverse Layout for Alternating Items */
+  .selling-point.reverse-layout {
+    flex-direction: row-reverse; /* Reverse the order of image and text */
+  }
+  
+  /* Image Section */
   .image-section img {
-    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
   }
-}
+  
+  /* Text Section */
+  .text-section {
+    flex: 1;
+  }
+  
+  .text-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .text-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }

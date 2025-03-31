@@ -17,23 +17,28 @@ const keySellingPoints = [
     description: "We offer cost-effective solutions with clear pricing structures, ensuring you get the best value for your investment.",
   },
 ];
-
 function KeySellingPoints() {
-  return (
-    <div className="selling-points-container">
-      {keySellingPoints.map((point) => (
-        <div key={point.id} className="selling-point">
-          <div className="text-section">
-            <h2>{point.title}</h2>
-            <p>{point.description}</p>
+    return (
+      <div className="selling-points-container">
+        {keySellingPoints.map((point, index) => (
+          <div
+            key={point.id}
+            className={`selling-point ${index % 2 === 0 ? "reverse-layout" : ""}`}
+          >
+            {/* Image Section */}
+            <div className="image-section">
+              <img src={point.image} alt={point.title} />
+            </div>
+  
+            {/* Text Section */}
+            <div className="text-section">
+              <h2>{point.title}</h2>
+              <p>{point.description}</p>
+            </div>
           </div>
-          <div className="image-section">
-            <img src={point.image} alt={point.title} />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default KeySellingPoints;
+        ))}
+      </div>
+    );
+  }
+  
+  export default KeySellingPoints;
